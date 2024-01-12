@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no"/>
+    <title>eShop - Recherche</title>
+
+    <meta id="og:title" name="og:title" content="Recherchez les produits Tech que vous aimez sur l'eShop"/>
+    <meta id="og:image" name="og:image" content="../images/logo-avec-illustrations-white.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="shortcut icon" href="..\images\logo-recherche.png" type="image/png">
+    <link rel="apple-touch-icon" href="../images/logo-recherche.jpg"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://kit.fontawesome.com/51918b7d55.js" crossorigin="anonymous"></script>
+    <script src="objects.js"></script>
+    <script src="script2.js"></script>
+    <script src="recherche.js"></script>
+
+    <!-- apple safari color theme -->
+    <meta name="theme-color" content="whitesmoke" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#222831" media="(prefers-color-scheme: dark)">
+</head>
+<body id="body-recherche" onload="focus('input')">
+    <section class="section-connect" id="section-connect"></section>
+    <section class="section-nav-menu ">
+        <div class="nav-menu-box">
+            
+            <div class="page-name-box">
+                <p class="page-name"><i class="fas fa-store home-button" onclick="document.location.href='index.html'"></i> Recherche</p>
+            </div>
+            <div id="search-box-top-placement" class="search-box-top-placement"></div>
+            <div class="right-menu-box">
+                <i id="search-top-button" class="fas fa-search" style="cursor: pointer;"onclick="document.location.href='recherche.html'"></i>
+                
+                
+                <div class="profile-menu-box">
+                    <div class="profile-box">
+                        <p class="profile-picture" onclick="profileButtonAction()"><i class="far fa-user-circle fa-2x"></i></p>
+                        <!-- <img src="../images/unknown.png" alt="" class="profile-picture"> -->
+                        <a href="javascript: profileButtonAction()"class="profile-name"><p id='profilename'><script type="text/javascript">profileName()</script></p></a>
+
+                        <!-- <script type="text/javascript">
+                            if (statut=="authentified") {
+                                document.write('<i class="fas fa-caret-down" onclick="profileButtonAction()"></i>')
+                            }
+                        
+                        
+                        </script> -->
+                        
+                        <div class="arrows-box">
+                            <p id="arrows-down-and-up"><script>profileArrowsDownAndUp();</script></p>
+                            </div>
+                            
+                        <!-- <i id="fa-caret-down" class="fas fa-caret-down" onclick="profileButtonAction()"></i>
+                        <i id="fa-caret-up" class="fas fa-caret-up" onclick="profileButtonAction()"></i> -->
+                    </div>
+                    <div id="disconnect-button" class="button-box">
+                        <p><a class="nav-button-text" href="javascript: disconnect()">Se déconnecter <i class="fas fa-sign-out-alt"></i></a></p>
+                    </div>
+                    <div  id="compte-button" class="button-box">
+                        <p><a class="nav-button-text" href="compte.html">Mon Compte <i class="fas fa-address-card"></i></a></p>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <section class="section-alert-message">
+        <div id="alert-message-box" class="alert-message-box">
+            <div class="alert-message-text-box">
+                <p id="alert-message-text" class="alert-message-text"></p>
+            </div>
+            <div id="alert-message-close-button-box">
+                <a href="javascript: closeAlertMessage()"><img id="close-alert-message-button" src="../images/croix.png" alt="fermer le bandeau"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-alert-message-2" id="section-alert-message-2">
+    </section>
+
+    <section id="section-search-bar"class="section-search-bar">
+        <div id="search-box" class="search-box">
+            <div id="search-bar-box" class="search-bar-box">
+                <div class="search-bar-input">
+                    <form action="javascript: searchButton()" autocomplete="off">
+                        <input type="text" class="input" id="input" name="input" value="" placeholder="Tapez pour rechercher" onkeyup="sendSuggestions()" onmouseover="focus()">
+                    </form>
+                </div>
+                <div class="search-bar-search-button">
+                    <i type="submit" aria-valuemax="Envoyer" name="input" class="fas fa-search search-button" onclick="searchButton()"></i>
+                </div>
+            </div>
+            <div id="search-bar-suggestions" class="search-bar-suggestions">
+                <div id="suggestion0" class="suggestion"></div>
+                <div id="suggestion1" class="suggestion"></div>
+                <div id="suggestion2" class="suggestion"></div>
+                <div id="suggestion3" class="suggestion"></div>
+                <div id="suggestion4" class="suggestion"></div>
+                <div id="suggestion5" class="suggestion"></div>
+                <div id="suggestion6" class="suggestion"></div>
+                <div id="suggestion7" class="suggestion"></div>
+            </div>
+
+            <div id="filters-box" >
+                <form onchange="submitFilterButtonText()">
+                    <div>
+                        <label>Type d'appareil : 
+                            <select name="" id="productTypeFilterSelector" class="filter-selector">
+                                <option value="" disabled selected>---</option>
+                                <script>printFiltersAllSpecs("type","","")</script>
+                            
+                            </select>
+                        </label>   
+                    </div>
+                <div>
+                    <label>Taille d'écran : 
+                        <select name="" id="screenSizeFilterSelector" class="filter-selector">
+                            <option value="" disabled selected>---</option>
+                            <script>printFiltersAllSpecs("screenSize","","\"")</script>
+                        
+                        </select>
+                    </label>   
+                </div>
+                    <div>
+                    <label>Systèmes d'exploitation :          
+                        <select name="" id="osFilterSelector" class="filter-selector">
+                            <option value="" selected disabled>---</option>
+                            <optgroup label="Principaux OS">
+                                <option value="Windows">Windows <script>document.write("(" + searchEngine("operatingSystem","windows")[1].length + ")");</script></option>
+                                <option value="macOS">macOS <script>document.write("(" + searchEngine("operatingSystem","macos")[1].length + ")")</script></option>
+                                <option value="Android">Android <script>document.write("(" + searchEngine("operatingSystem","android")[1].length + ")")</script></option>
+                                <option value="iOS">iOS <script>document.write("(" + searchEngine("operatingSystem","ios")[1].length + ")")</script></option>
+                                <option value="iPadOS">iPadOS <script>document.write("(" + searchEngine("operatingSystem","iPadOS")[1].length + ")")</script></option>
+                            </optgroup>
+                            <optgroup label="Tous les OS">
+                                <script>
+                                    printFiltersAllSpecs("operatingSystem","","")
+                                    // var allOsList = searchAvailableSpecs("operatingSystem")
+                                    // for (i =0; i < allOsList.length; i++) {
+                                    //     document.write("<option value='" + allOsList[i] + "'>" + allOsList[i] + " (" + searchOsEngine(allOsList[i])[1].length + ")</option>")
+
+                                        
+                                    // }
+                                </script>
+                            </optgroup>
+
+                        </select>
+                    </label>   
+                    </div>
+                    <div>
+                        <label>Marque : 
+                            <select name="" id="constructorFilterSelector" class="filter-selector">
+                                <option value="" disabled selected>---</option>
+                                <script>printFiltersAllSpecs("constructeur","","")</script>
+                            
+                            </select>
+                        </label>   
+                    </div>
+            </form>
+                <div style="text-align:center">
+                    <button  id="filter-button"  onclick="submitFilterButton()">Filtrer la recherche</button>
+                </div>
+
+            </div>
+        </div>        
+    </section>
+<div id="filters-button-placement">
+    <div id="filters-button-box" class="filters-button-box">
+        <p>+<a href="javascript: showHideSearchFilters()" class="link-with-no-style">Filtres</a></p>
+    </div>
+</div>
+        
+
+
+
+    <section id="results">
+        <!-- <p id="preview-message"></p>
+        <br>
+        <p id="search-category"></p>
+        <p id="search-term"></p> -->
+    </section>
+
+
+
+
+
+
+
+    <section class="section-search-results">
+        <div id="search-results-placement"></div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script qui s'exécute à la fin du chargement de la page -->
+    <script>showSearchBarTop(); showPreviewResults(); result();submitFilterButtonText(); showHideSearchButton();</script>
+
+
+    <script>
+        // régler le background de body
+        if (pageName == "recherche.html" && !searchTerm && document.documentElement.scrollWidth >= 735){
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+                document.getElementById("body-recherche").style.background = "linear-gradient(180deg,rgb(41, 121, 148),rgba(129, 70, 80, 0.63))"
+            } else if (window.matchMedia('(prefers-color-scheme: light)').matches && document.documentElement.scrollWidth >= 735){
+                document.getElementById("body-recherche").style.background = "linear-gradient(40deg,  lightblue,pink)"
+
+            }
+            // document.getElementById("body-recherche").style.background = "white";
+
+
+}
+    </script>
+</body>
+</html>

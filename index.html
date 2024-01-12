@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no"/>
+    <title>eShop</title>
+    <meta  name="og:title" content="L'eShop qui vous conseille le meilleur de la Tech"/>
+    <meta name="og:image" content="../images/logo-avec-illustrations-white.png"/>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="../images/logo-white.jpg"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" href="../images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="eShop">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    
+
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/51918b7d55.js" crossorigin="anonymous"></script>
+    <script src="objects.js"></script>
+    <script src="script2.js"></script>
+    <script src="recherche.js"></script>
+
+    <!-- apple safari color theme -->
+    <meta name="theme-color" content="whitesmoke" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#222831" media="(prefers-color-scheme: dark)">
+
+</head>
+<body>
+    <section class="section-connect" id="section-connect"></section>
+    <section class="section-nav-menu ">
+        <div class="nav-menu-box">
+
+            <div class="page-name-box">
+                <p class="page-name"><i class="fas fa-store site-logo"></i> eShop</p>
+            </div>
+            <div id="search-box-top-placement" class="search-box-top-placement"></div>
+            
+            <div class="right-menu-box">
+                <i class="fas fa-search" style="cursor: pointer;" onclick="document.location.href='recherche.html'"></i>
+                <section class="recherche">
+
+                
+                </section>
+                <div id="profile-menu-box" class="profile-menu-box">
+                    <div class="profile-box">
+                        <p class="profile-picture" onclick="profileButtonAction()"><i class="far fa-user-circle fa-2x"></i></p>
+                        <a href="javascript: profileButtonAction()"class="profile-name"><p id='profilename'><script type="text/javascript">profileName()</script></p></a>
+
+                        <!-- <script type="text/javascript">
+                            if (statut=="authentified") {
+                                document.write('<i class="fas fa-caret-down" onclick="profileButtonAction()"></i>')
+                            }
+                        
+                        
+                        </script> -->
+                        
+                        <div class="arrows-box">
+                            <p id="arrows-down-and-up"><script>profileArrowsDownAndUp();</script></p>
+                            </div>
+                            
+                        <!-- <i id="fa-caret-down" class="fas fa-caret-down" onclick="profileButtonAction()"></i>
+                        <i id="fa-caret-up" class="fas fa-caret-up" onclick="profileButtonAction()"></i> -->
+                    </div>
+                    <div id="disconnect-button" class="button-box">
+                        <p><a class="nav-button-text" href="javascript: disconnect()">Se déconnecter <i class="fas fa-sign-out-alt"></i></a></p>
+                    </div>
+                    <div  id="compte-button" class="button-box">
+                        <p><a class="nav-button-text" href="compte.html">Mon Compte <i class="fas fa-address-card"></i></a></p>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <section class="section-alert-message">
+        <div id="alert-message-box" class="alert-message-box">
+            <div class="alert-message-text-box">
+                <p id="alert-message-text" class="alert-message-text"></p>
+            </div>
+            <div id="alert-message-close-button-box">
+                <a href="javascript: closeAlertMessage()"><img id="close-alert-message-button" src="../images/croix.png" alt="fermer le bandeau"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alert-message-2" id="section-alert-message-2"></section>
+
+
+
+
+
+
+    <section id="section-suggestions" class="section-suggestions section-margin">
+        <h2 class="section-title"><i class="fas fa-lightbulb"></i> Suggestions</h2>
+        <div  class="flex-boxes suggestion-boxes">
+
+            <script type="text/javascript">document.write(getTextProductBox(product1));document.write(getTextProductBox(product11));document.write(getTextProductBox(product10));homeSuggestions()</script>
+        </div>
+    </section>
+
+
+
+    <script>HomePageSuggestions(); </script>
+
+
+
+
+
+
+    <br>
+    <p class="foot-note">-&nbsp;&nbsp; <a class="link-with-no-style" href="https://louisonbdz.knowitbetter.fr" title="Consulter le Profil">L. Bednarowicz</a> - Projet d'apprentissage de JavaScript - mai 2021 &nbsp;&nbsp;-</p>
+
+    <script>showSearchBarTop()</script>
+</body>
+</html>
+
+

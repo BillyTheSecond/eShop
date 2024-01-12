@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte</title>
+    <meta name="og:title" content="eShop - Accéder à votre compte"/>
+    <link rel="shortcut icon" href="../images/logo-compte.png" type="image/png"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51918b7d55.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script2.js"></script>
+    <script src="recherche.js"></script>
+
+    <!-- apple safari color theme -->
+    <meta name="theme-color" content="whitesmoke" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#222831" media="(prefers-color-scheme: dark)">
+
+</head>
+<body id="body-compte">
+    <section class="section-connect" id="section-connect"></section>
+    <section class="section-nav-menu ">
+        <div class="nav-menu-box">
+            <div class="page-name-box">
+                <p class="page-name"><i class="fas fa-store home-button" onclick="document.location.href='index.html'"></i> Mon compte</p>
+            </div>
+            <div class="right-menu-box">
+                <div class="profile-menu-box">
+                    <div class="profile-box">
+                        <p class="profile-picture" onclick="profileButtonAction()"><i class="far fa-user-circle fa-2x"></i></p>
+                        <!-- <img src="../images/unknown.png" alt="" class="profile-picture"> -->
+                        <a href="javascript: profileButtonAction()"class="profile-name"><p id='profilename'><script type="text/javascript">profileName()</script></p></a>
+                        <div class="arrows-box">
+                            <p id="arrows-down-and-up"><script>profileArrowsDownAndUp();</script></p>
+                        </div>                    
+                    </div>
+                    
+
+                    <div id="disconnect-button" class="button-box">
+                        <p><a class="nav-button-text" href="javascript: disconnect()">Se déconnecter <i class="fas fa-sign-out-alt"></i></a></p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <section class="section-alert-message">
+        <div id="alert-message-box" class="alert-message-box">
+            <div class="alert-message-text-box">
+                <p id="alert-message-text" class="alert-message-text"></p>
+            </div>
+            <div id="alert-message-close-button-box">
+                <a href="javascript: closeAlertMessage()"><img id="close-alert-message-button" src="../images/croix.png" alt="fermer le bandeau"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alert-message-2" id="section-alert-message-2">
+    </section>
+
+    <section class="section-profile-details">
+        <div class="information-grey-box" id="information-grey-box">
+            <h2 class="section-title compte-box-title">Mes informations</h2>
+            <div class="grey-line"></div>
+            <div class="information-boxes" id="information-boxes">
+                <div id="information-box1" class="information-box">
+                    <div class="information-name-box">
+                        <p id="profile-info1-name" class="information-name">Name</p>
+                    </div>
+                    <div class="information-value-box">
+                        <p id="profile-info1-value" class="information-value">value</p>
+                    </div>
+                </div>
+                <div id="information-box2" class="information-box">
+                    <div class="information-name-box">
+                        <p id="profile-info2-name" class="information-name">Last Name</p>
+                    </div>
+                    <div class="information-value-box">
+                        <p id="profile-info2-value" class="information-value">value</p>
+                    </div>
+                </div>
+                <div id="information-box3" class="information-box">
+                    <div class="information-name-box">
+                        <p id="profile-info3-name" class="information-name">Age</p>
+                    </div>
+                    <div class="information-value-box">
+                        <p id="profile-info3-value" class="information-value">value</p>
+                    </div>
+                </div>
+                <div id="information-box4" class="information-box">
+                    <div class="information-name-box">
+                        <p id="profile-info4-name" class="information-name">Age</p>
+                    </div>
+                    <div class="information-value-box">
+                        <p id="profile-info4-value" class="information-value">value</p>
+                    </div>
+                </div>
+                <div id="information-box5" class="information-box">
+                    <div class="information-name-box">
+                        <p id="profile-info5-name" class="information-name">Age</p>
+                    </div>
+                    <div class="information-value-box">
+                        <p id="profile-info5-value" class="information-value">value</p>
+                    </div>
+                </div>
+            </div>
+            <script>profileInformations()</script>
+            <div class="modify-cookies-button-box">
+                <!-- <p><a class="modify-cookies-button" href="javascript: modifyProfileInformation()">Modifier les informations</a></p> -->
+                <p><a class="modify-cookies-button" href="javascript: disconnect()" >Pour modifier ces informations, déconnectez-vous et connectez-vous à nouveau.</a></p>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
