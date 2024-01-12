@@ -5,4 +5,4 @@ Objectifs du site:
   - Avoir une première approche de la gestion de cookies et de la gestion de comptes utilisateurs en local
 
 
-Lien du site : <a href="https://billythesecond.github.io/eShop/">eShop hébergé sur GitHub</a>
+Lien du site : <a href="https://billythesecond.github.io/eShop/" target="_blank">eShop hébergé sur GitHub</a>
