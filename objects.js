@@ -23,7 +23,7 @@ totalProductList = [
     weight: "1,38 kg",
     frontCamera: "Caméra rétractable 1MP (720p HD)",
     link:"https://consumer.huawei.com/fr/laptops/matebook-d-14-2020/buy/",
-    photo:"../images/huawei-matebookd14-2020.png",
+    photo:"images/huawei-matebookd14-2020.png",
     price: "699 € (réduction de 150 €)",
 
 },
@@ -46,7 +46,7 @@ totalProductList = [
     connections: "1..USB-C 3.2<br>1..USB-A 3.0<br>1..USB-A 2.0<br>1..Port Jack 3,5 mm<br>1..HDMI<br>1..Lecteur de cartes SD",
     weight: "2.2 kg+",
     link:"https://www.lenovo.com/fr/fr/laptops/ideapad/s-series/IdeaPad-3-17ALC6/p/82KVCTO1WWFRFR0/customize?guid=492205e5-aafa-4779-b67d-a9802b2445f7&options_11=&fromEdit=true&transMessageFlag=true#!",
-    photo:"../images/lenovo_ideapad3.png",
+    photo:"images/lenovo_ideapad3.png",
     price: "729 €"
 },
  product3 = {
@@ -69,7 +69,7 @@ totalProductList = [
     weight: "162 g",
     backCamera: "Double appareil photo 12 Mpx : ultra grand‑angle et grand‑angle",
     frontCamera: "Appareil photo 12 Mpx",
-    photo:"../images/appleIphone12.png",
+    photo:"images/appleIphone12.png",
     price: "Dès 909 €"
 },
  product4 = {
@@ -89,7 +89,7 @@ totalProductList = [
     reconnaissanceFaciale: "Dévérouillage Facial" ,
     connections: "1..USB-C 2.0<br>1..Fente double nano-SIM",
     link:"https://www.oneplus.com/fr/oneplus-nord?from=nord-specs",
-    photo:"../images/oneplusNord.png",
+    photo:"images/oneplusNord.png",
     price:"369€|429 € (Prix soldés)"
 },
  product5 = {
@@ -110,7 +110,7 @@ totalProductList = [
     numPad: "Non",
     connections: "2..Ports Thunderbolt (USB 4)<br>1..Port Jack 3,5 mm",
     link:"https://www.apple.com/fr/shop/buy-mac/macbook-air",
-    photo:"../images/apple-macbookAir2020.png",
+    photo:"images/apple-macbookAir2020.png",
     price:"Dès 1129€"
 },
  product6 = {
@@ -130,7 +130,7 @@ totalProductList = [
     reconnaissanceFaciale: undefined ,
     connections:"1..Port USB-C 2.0<br>1..Prise Jack 3,5 mm",
     link:"https://www.samsung.com/fr/smartphones/galaxy-a/galaxy-a52-5g/",
-    photo:"../images/samsung-galaxyA52-4G.png",
+    photo:"images/samsung-galaxyA52-4G.png",
     price:"349 €"
 },
 product7 = {
@@ -150,7 +150,7 @@ product7 = {
     reconnaissanceFaciale: undefined ,
     connections:"1..Port USB-C 3.1<br>1..Prise Jack 3,5 mm",
     link:"https://store.google.com/fr/config/pixel_4a?hl=fr",
-    photo:"../images/google-pixel-4a.png",
+    photo:"images/google-pixel-4a.png",
     price:"349 €"
 },
 product8 = {
@@ -173,7 +173,7 @@ product8 = {
     weight: "1,33 kg",
     frontCamera: "Caméra rétractable 1MP (720p HD)",
     link:"https://consumer.huawei.com/fr/laptops/matebook-x-pro-2021/buy/",
-    photo:"../images/huawei-matebookxpro2021.png",
+    photo:"images/huawei-matebookxpro2021.png",
     price:"À partir de 1499,99€"
 },
 product9 = {
@@ -193,7 +193,7 @@ product9 = {
     reconnaissanceFaciale: "Oui, FaceID" ,
     connections: "1..Port Lightning<br>1..Fente nano-SIM",
     link:"https://www.apple.com/fr/shop/buy-iphone/iphone-xr",
-    photo:"../images/apple-iphonexr.png",
+    photo:"images/apple-iphonexr.png",
     price:"589€ - 639€"
 },
 product10 = {
@@ -214,7 +214,7 @@ product10 = {
     connections: "1..Port Lightning<br>1..Prise Jack 3.5mm",
     weight: "490g",
     link:"https://www.apple.com/fr/shop/buy-ipad/ipad-10-2",
-    photo:"../images/apple-ipad8.png",
+    photo:"images/apple-ipad8.png",
     price:"Dès 389€"
 },
 product11 = {
@@ -235,7 +235,7 @@ product11 = {
     connections: "1..Port Ethernet<br>2..Ports Thunderbolt/USB 4<br>1..Port HDMI 2.0<br>2..Ports USB-A<br>1..Prise Jack 3.5mm",
     weight: "1.2 kg",
     link:"https://www.apple.com/fr/shop/buy-mac/mac-mini",
-    photo:"../images/apple-macmini.png",
+    photo:"images/apple-macmini.png",
     price: "799€|1029€"
 },
 product12 = {
@@ -257,7 +257,7 @@ product12 = {
     connections: "1..Port HDMI<br>1..Port USB Type-C 3.2<br>1Port USB Type-A 3.2<br>2..Port USB Type-A 2.0<br>1..Prise Jack 3.5mm<br>1..Lecteur de cartes SD",
     weight: "2.3 kg",
     link:"https://www.boulanger.com/ref/1156709",
-    photo:"../images/asus-vivobook17.png",
+    photo:"images/asus-vivobook17.png",
     price: "849€ (-15%)",
     note:"Cet ordinateur portable 17 pouces est un des rares de sa catégorie à proposer de bonnes caractéristiques (SSD de 512 Go, 8Go de RAM, intel i7,nombre de ports...). Cependant, la résolution de l'écran est assez faible et l'écran est de basse qualité (angle de vue, ombres...)."
 },
@@ -282,7 +282,7 @@ product13 = {
     frontCamera: "5.0 Mpx",
     backCamera: "8.0 Mpx",
     link:"https://www.samsung.com/fr/tablets/galaxy-tab-s/galaxy-tab-s6-lite-10-4-inch-gray-64gb-wi-fi-sm-p610nzaaxef/buy/",
-    photo:"../images/samsung-galaxytabs6lite.png",
+    photo:"images/samsung-galaxytabs6lite.png",
     price: "399€",
     note:"Avec cette tablette, samsung propose un très bon rapport qualité-prix. Attention cependant au stockage de la tablette. 64 Go est une faible quantité aujourd'hui, si vous prenez des photos, installez des applications régulièrement, vous pouvez être bloqués rapidemment. Lorsque vous recevez la tablette,  seuls 49,2 Go sont réellement disponibles (le reste du stockage est occupé par le système d'exploitation). Ne vous inquiétez pas! vous pourrez rajouter du stockage en achetant une carte MicroSD."
 },
@@ -307,7 +307,7 @@ product14 = {
     frontCamera: "Ultra grand-angle 12 Mpx",
     backCamera: "Grand-angle 12 Mpx",
     link:"https://www.apple.com/fr/shop/buy-ipad/ipad-mini",
-    photo:"../images/apple-ipadmini.png",
+    photo:"images/apple-ipadmini.png",
     price: "Dès 559 €",
     note:"Nous vous déconseillons de prendre seulement 64 Go de stockage. Vous serez très vite bloqués et ne pourrez plus prendre de photos ou installer d'applications."
 },
@@ -332,7 +332,7 @@ product15 = {
     weight: "1.49 kg",
     frontCamera: "Caméra HD 720p encastrée dans le clavier",
     link:"https://consumer.huawei.com/fr/laptops/matebook-d-14-2020/buy/",
-    photo:"../images/huawei-matebook-14-2021.png",
+    photo:"images/huawei-matebook-14-2021.png",
     price: "999,99€ (<del>1249,99€</del>)",
     note:"Le <strong>ratio de l'écran</strong> est diffère de la plupart des ordinateur portables. Il est de 3:2, et non pas de 16:9. Cela peut être dérangeant.<br>Une option d'écran tactile peut être ajoutée"
 
@@ -358,7 +358,7 @@ product16 = {
     weight: "1.49 kg",
     frontCamera: "Caméra HD 720p encastrée dans le clavier",
     link:"https://consumer.huawei.com/fr/laptops/matebook-d-14-2020/buy/",
-    photo:"../images/huawei-matebook-14-2021.png",
+    photo:"images/huawei-matebook-14-2021.png",
     price: "999,99€ (<del>1249,99€</del>)",
     note:"Le <strong>ratio de l'écran</strong> est diffère de la plupart des ordinateur portables. Il est de 3:2, et non pas de 16:9. Cela peut être dérangeant.<br>Une option d'écran tactile peut être ajoutée"
 
@@ -384,7 +384,7 @@ product16 = {
 //     weight: "1.49 kg",
 //     frontCamera: "Caméra HD 720p encastrée dans le clavier",
 //     link:"https://consumer.huawei.com/fr/laptops/matebook-d-14-2020/buy/",
-//     photo:"../images/huawei-matebook-14-2021.png",
+//     photo:"images/huawei-matebook-14-2021.png",
 //     price: "999,99€ (<del>1249,99€</del>)",
 //     note:"Le <strong>ratio de l'écran</strong> est diffère de la plupart des ordinateur portables. Il est de 3:2, et non pas de 16:9. Cela peut être dérangeant.<br>Une option d'écran tactile peut être ajoutée"
 
@@ -409,80 +409,80 @@ product16 = {
 const totalOsList= [
 os1 = {
     nom: "Windows",
-    photo:"../images/os-illustrations/windows11.png",
+    photo:"images/os-illustrations/windows11.png",
 
 }
 ,
 os2 = {
     nom: "iOS",
-    photo:"../images/os-illustrations/ios.png",
+    photo:"images/os-illustrations/ios.png",
 
 }
 ,
 os3 = {
     nom: "Android",
-    photo:"../images/os-illustrations/android.png",
+    photo:"images/os-illustrations/android.png",
 
 }
 ,
 os4 = {
     nom: "Windows 10 Famille & Etudiant",
-    photo:"../images/os-illustrations/windows10.png",
+    photo:"images/os-illustrations/windows10.png",
 
 }
 ,
 os5 = {
     nom: "iOS 14",
-    photo:"../images/os-illustrations/ios14.png",
+    photo:"images/os-illustrations/ios14.png",
 
 }
 ,
 os6 = {
     nom: "Android 10",
-    photo:"../images/os-illustrations/android10.png",
+    photo:"images/os-illustrations/android10.png",
 
 }
 ,
 os7 = {
     nom: "Android 11",
-    photo:"../images/os-illustrations/android11.png",
+    photo:"images/os-illustrations/android11.png",
 
 }
 ,
 os8 = {
     nom: "OxygenOS basé sur Android 10",
-    photo:"../images/os-illustrations/oxygenos.png",
+    photo:"images/os-illustrations/oxygenos.png",
 
 }
 ,
 os9 = {
     nom: "macOS",
-    photo:"../images/os-illustrations/macos.png",
+    photo:"images/os-illustrations/macos.png",
 
 }
 ,
 os10 = {
     nom: "macOS Big Sur",
-    photo:"../images/os-illustrations/macos-bigsur.png",
+    photo:"images/os-illustrations/macos-bigsur.png",
 
 }
 ,
 os11 = {
     nom: "iPadOS",
-    photo: "../images/os-illustrations/ipados.png"
+    photo: "images/os-illustrations/ipados.png"
 }
 ,
 os12 = {
     nom: "iPadOS 14",
-    photo: "../images/os-illustrations/ipados14.png"
+    photo: "images/os-illustrations/ipados14.png"
 },
 os13 = {
     nom: "iPadOS 15",
-    photo: "../images/os-illustrations/ipados15.png"
+    photo: "images/os-illustrations/ipados15.png"
 },
 os14 ={
     nom: "iOS 15",
-    photo: "../images/os-illustrations/ios15.png"
+    photo: "images/os-illustrations/ios15.png"
 }
 ]
 
@@ -498,31 +498,31 @@ os14 ={
 const totalConstructorList = [
 constructor1 = {
     nom: "Apple",
-    photo: "../images/constructor-illustrations/apple.png"
+    photo: "images/constructor-illustrations/apple.png"
 },
 constructor2 = {
     nom: "HUAWEI",
-    photo: "../images/constructor-illustrations/huawei.png"
+    photo: "images/constructor-illustrations/huawei.png"
 },
 constructor3 = {
     nom: "Lenovo",
-    photo: "../images/constructor-illustrations/lenovo.png"
+    photo: "images/constructor-illustrations/lenovo.png"
 },
 constructor4 = {
     nom: "OnePlus",
-    photo: "../images/constructor-illustrations/oneplus.png"
+    photo: "images/constructor-illustrations/oneplus.png"
 },
 constructor5 = {
     nom: "Google",
-    photo: "../images/constructor-illustrations/google.png"
+    photo: "images/constructor-illustrations/google.png"
 },
 constructor6 = {
     nom: "Samsung",
-    photo: "../images/constructor-illustrations/samsung.png"
+    photo: "images/constructor-illustrations/samsung.png"
 },
 constructor7 = {
     nom: "Asus",
-    photo: "../images/constructor-illustrations/asus.png"
+    photo: "images/constructor-illustrations/asus.png"
 }
 ]
 
